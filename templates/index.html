@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>我寶介紹-REI篇</title>
+    <style>
+        /* 基礎設定 */
+        body {
+            background-image: url("/static/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Microsoft JhengHei', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 漸變大標題 */
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #ff7be2, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* 讓容器內的圖片與文字水平對齊並垂直置中 */
+        .text-with-icon {
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            gap: 8px;            /* 文字與圖片間的距離 */
+        }
+
+        /* 強制圖片高度與文字一致 */
+        .small-icon {
+            height: 1em;         /* 跟隨文字高度 */
+            width: auto;         /* 寬度依比例縮放 */
+            object-fit: contain;
+        }
+        /* 上方選單區塊 */
+        .nav-menu {
+            background: rgba(255, 255, 255, 0.58);
+            width: 100%;
+            max-width: 500px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .nav-item {
+            color: #ff768a;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        /* 內容區塊標題 */
+        .section-title {
+            align-self: flex-start;
+            max-width: 500px;
+            width: 100%;
+            margin: 5px auto;
+            font-size: 1.0rem;
+            color: #333;
+        }
+
+        /* 白色圓角內容卡片 */
+        .card {
+            background: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            max-width: 500px;
+            border-radius: 50px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .card p {
+            color: #424242;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* 列表樣式 */
+        .list-item {
+            color: #ff768a;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .youtube-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #FF0000; /* YouTube 紅 */
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+
+        .youtube-btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.05); /* 滑鼠移上去稍微變大 */
+        }
+
+        /* 如果想嵌入影片視窗 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 比例 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-title">
+        直井怜 なおいれい <br>
+    </div>
+
+    <div class="section-title">Rei寶ㄉ團體</div>
+
+    <div style="width: 100%; max-width: 500px; text-align: left;">
+        <ul>
+            <li class="list-item">IVE</li>
+        </ul>
+    </div>
+
+    <div class="nav-menu">
+        <a href="#" class="nav-item">BANG BANG</a>
+        <a href="#" class="nav-item">XOXZ</a>
+        <a href="#" class="nav-item">ATTITUDE</a>
+        <a href="#" class="nav-item">REBEL HEART</a>
+    </div>
+
+    <div class="card">
+        <h2>本名 直井怜</h2>
+        <p class="text-with-icon">
+            國籍
+            <img src="/static/japan.jpg" class="small-icon">
+            日本 愛知縣名古屋市
+        </p>
+        <p>出生 2004年2月3日</p>
+    </div>
+
+    <div class="card">
+        <h2>IVE時期</h2>
+        <p>2021年11月3日，STARSHIP娛樂公佈Rei為IVE的第五名成員。12月1日，以單曲《ELEVEN》正式出道。</p>
+    </div>
+
+    <div class="card">
+        <h2>BANG BANG</h2>
+        <p>於2026年2月9日由STARSHIP娛樂發行，為第二張韓語正規專輯《REVIVE+》的先行單曲。</p>
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9qkpcLK422o" frameborder="0" allowfullscreen></iframe>
+    </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>XOXZ</h2>
+        <p>為第四張韓文迷你專輯《IVE SECRET》的主打曲，於2025年8月25日由STARSHIP娛樂發行。</p>
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/B1ShLiq3EVc" frameborder="0" allowfullscreen></iframe>
+    </div>
+        </a>
+    </div>
+
+<div class="card">
+        <h2>ATTITUDE</h2>
+        <p>為第三張韓文迷你專輯《IVE EMPATHY》的主打曲之一，於2025年2月3日由STARSHIP娛樂發行。</p>
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/38xYeot-ciM" frameborder="0" allowfullscreen></iframe>
+    </div>
+        </a>
+    </div>
+
+</body>
+</html>
