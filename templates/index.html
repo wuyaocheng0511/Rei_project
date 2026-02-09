@@ -66,6 +66,12 @@
             width: auto;         /* 寬度依比例縮放 */
             object-fit: contain;
         }
+
+        .middle-icon {
+            height: 10em;         /* 跟隨文字高度 */
+            width: auto;         /* 寬度依比例縮放 */
+            object-fit: contain;
+        }
         /* 上方選單區塊 */
         .nav-menu {
             background: rgba(255, 255, 255, 0.58);
@@ -242,13 +248,19 @@
     </div>
 
     <div class="card">
-        <h2>本名 直井怜</h2>
-        <p class="text-with-icon">
+        <h2>本名 直井怜
+        <p class="text-with-icon"></h2>
             國籍
             <img src="/static/japan.jpg" class="small-icon">
             日本 愛知縣名古屋市
-        </p>
+            <p>出道地點
+            <img src="/static/korea.jpg" class="small-icon">
+            韓國、
+            <img src="/static/japan.jpg" class="small-icon">
+            日本</p>
         <p>出生 2004年2月3日</p>
+        <p>出道日期 2021年12月1日 <img src="/static/korea.jpg" class="small-icon"> 韓國</p>
+        <img src="/static/oio.jpg" class="middle-icon">
     </div>
 
     <div class="card">
@@ -319,10 +331,11 @@
         <img src="{{ url_for('static', filename='avatar.jpg') }}" class="card-img">
         <img src="{{ url_for('static', filename='S__1400836_0.jpg') }}" class="card-img">
         <img src="{{ url_for('static', filename='S__1400837_0.jpg') }}" class="card-img">
-        <img src="{{ url_for('static', filename='S__1400838_0.jpg') }}" class="card-img">
         <img src="{{ url_for('static', filename='S__1400839_0.jpg') }}" class="card-img">
         <img src="{{ url_for('static', filename='S__1400841.jpg') }}" class="card-img">
         <img src="{{ url_for('static', filename='S__1400840.jpg') }}" class="card-img">
+        <img src="{{ url_for('static', filename='REI12.jpg') }}" class="card-img">
+        <img src="{{ url_for('static', filename='REI2.jpg') }}" class="card-img">
     </div>
 
 </body>
